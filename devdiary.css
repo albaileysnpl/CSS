@@ -190,6 +190,18 @@ devdiary.css
         font-weight: bold;
         /* margin-top: 5px; */
     }
+    .release-info-container {
+        grid-row:2;
+        display:grid;
+        grid-template-columns:35px 75% auto;
+        column-gap: 15px;
+        align-items: center;
+        padding: 10px 5px 30px 5px;
+    }
+    .release-info-content {
+        grid-column: 2;
+        font-size: 12px;
+    }
     .entry-item-author-container {
       grid-row:1;
       grid-column:3;
