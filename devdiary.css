@@ -52,7 +52,6 @@ devdiary.css
   /* .sidebar.closed {
     width: 0;
   } */
-
   .sidebar h2 {
     margin-top: 0;
     font-size: 20px;
@@ -85,16 +84,10 @@ devdiary.css
     /* display: flex; */
     /* margin-bottom: 30px; */
     /* padding-top: 250px; */
-    
     grid-template-rows:95% 100px;
-
     display: grid;
     justify-content: center;
-
-
   }
-  
-
   .sidebar-brand-logo{grid-row: 2;height:100%}
 
     .menuitem-container{
@@ -108,8 +101,11 @@ devdiary.css
     }
     .menuitem-logo{
         grid-column-start: 1;
+        width: 30px;
+        height: 30px;
         padding:0px;
         margin:0px;
+        /* overflow: hidden; */
     }
     .menuitem-text{
         font-size: 14px;
@@ -163,8 +159,8 @@ devdiary.css
     }
     .entry-item-container{
         display: grid;
-        grid-template-rows: 65px auto 65px;
-        row-gap: 5px;        
+        grid-template-rows: 65px 20px auto 65px;
+        /* row-gap: 5px;         */
         /* margin: 0px 0px; */
         padding-bottom: 0px;
         /* margin-right: 50px; */
@@ -175,10 +171,10 @@ devdiary.css
     .entry-item-title-container{
         grid-row:1;
         display:grid;
-        grid-template-columns:35px 75% auto;
+        grid-template-columns:35px 60% auto;
         column-gap: 15px;
         align-items: center;
-        padding:10px 15px 30px 15px;
+        padding:10px 15px 0px 15px;
     }
     .entry-item-title-logo{
         grid-column:1;
@@ -189,6 +185,20 @@ devdiary.css
         font-size: 24px;
         font-weight: bold;
         /* margin-top: 5px; */
+    }
+    .release-info-container {
+        grid-row:2;
+        grid-template-columns:35px 75% auto;
+        display: grid;
+        column-gap: 15px;
+        align-items: center;
+        padding-left: 15px;
+    }
+    .release-info-content {
+        grid-column: 2;
+        font-size: 12px;
+        color: #7db700;
+        white-space: nowrap;
     }
     .entry-item-author-container {
       grid-row:1;
@@ -205,7 +215,7 @@ devdiary.css
       grid-column: 1;
       font-size: 12px;
       /* font-weight: bold; */
-      color: #eee;
+      color: #3498db;
       white-space: nowrap;
   }
     .entry-item-author-avatar {
@@ -215,9 +225,7 @@ devdiary.css
       border-radius: 50%;
       overflow: hidden;
       border: 2px solid #3498db;
-
       }
-
    .entry-item-author-avatar img {
           /* width: 100%;
           height: 100%; */
@@ -227,23 +235,27 @@ devdiary.css
           /* margin-left: 10px; */
           /* white-space: nowrap; */
       }
-
    /* .entry-item-author-role {
       font-size: 18px;
       color: #eee;
       } */
     .entry-item-footer-container{
-        grid-row:3;
+        grid-row:4;
         display:grid;
-        grid-template-columns:35px 75% 35px 35px;
+        grid-template-columns: 75% 35px 35px 35px;
         column-gap: 10px;
         align-items: center;
         padding:0px 15px 0px 15px;
         justify-content: right;
     }
-    .entry-item-link-logo{
-
-        grid-column: 4;
+    .entry-item-microsoft-logo{
+      grid-column: 4;
+      width: 35px;
+      height: 35px;
+      justify-content: right;
+  }
+    .entry-item-wiki-logo{
+        grid-column: 5;
         width: 35px;
         height: 35px;
         justify-content: right;
@@ -259,19 +271,17 @@ devdiary.css
         font-size: 18px;
         white-space: nowrap;
         color: #ccc;
-        display:none;
-        
+        display:none; 
     }
   .entry-item-content-container
   {
-    grid-row:2;
+    grid-row:3;
     display:grid;
     /* grid-template-rows:  auto auto 20px ; */
-    grid-template-columns:35px auto auto 100px;
+    grid-template-columns:65px auto auto 100px;
   }
   .entry-item-content{
-   
-    grid-row:2;
+    grid-row:3;
     grid-column:2/3;
     display: grid;
     /* padding: 10px; */
@@ -280,7 +290,6 @@ devdiary.css
     display: inline;
     line-height: 1.5;
   }
- 
 /*End Entry Style */
     .filter-button-container {
     display: flex;
