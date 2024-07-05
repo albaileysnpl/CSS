@@ -1,0 +1,177 @@
+    .content {
+        flex-grow:1;
+        display: none;
+        flex-direction: column;
+        margin-left:250px;
+        padding: 20px;
+        /* background-color:#2d2d30; */
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 10px;
+        /* box-sizing: border-box; */
+        /* box-shadow: 0px 0 30px rgba(0, 0, 0, 0.5); */
+        /* min-height:720px ; */
+    }
+    .active {
+            display: flex;
+    }
+    /* Entry Style Section */
+    .entry-list {
+        width: 100%;
+        height: 100%;
+        list-style: none;
+        /* padding-left: 50px; */
+        margin: 0;
+        margin-bottom: 0px;
+        max-width: 90%;
+        /* overflow-y: auto; */
+    }
+    .entry-list p a {
+        display: block;
+        color: #ccc;
+        text-decoration: underline;
+    }
+    .entry-item {
+        padding: 10px 0;
+        
+    }
+    .entry-item:last-child {
+        border-bottom: none;
+    }
+    .entry-item img {
+        width: 100%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    .entry-item-container{
+        display: grid;
+        grid-template-rows: 65px 20px auto 65px;
+        /* row-gap: 5px;         */
+        /* margin: 0px 0px; */
+        padding-bottom: 0px;
+        /* margin-right: 50px; */
+        background-color: #3e3e42;
+        border-radius: 10px;
+        opacity: 0.90;
+    }
+    .entry-item-title-container{
+        grid-row:1;
+        display:grid;
+        grid-template-columns:35px 60% auto;
+        column-gap: 15px;
+        align-items: center;
+        padding:10px 15px 0px 15px;
+    }
+    .entry-item-title-logo{
+        grid-column:1;
+        align-items: center;
+    }
+    .entry-item-title-content {
+        grid-column:2;
+        font-size: 24px;
+        font-weight: bold;
+        /* margin-top: 5px; */
+    }
+    .release-info-container {
+        grid-row:2;
+        grid-template-columns:35px 75% auto;
+        display: grid;
+        column-gap: 15px;
+        align-items: center;
+        padding-left: 15px;
+    }
+    .release-info-content {
+        grid-column: 2;
+        font-size: 12px;
+        color: #7db700;
+        white-space: nowrap;
+    }
+    .entry-item-author-container {
+      grid-row:1;
+      grid-column:3;
+      display:grid;
+      grid-template-columns: auto auto;
+      column-gap: 10px;
+      align-items:center;
+      justify-content: right;
+      border-radius: 8px;
+      font-family: Arial;
+    }
+    .entry-item-author-name {
+      grid-column: 1;
+      font-size: 12px;
+      /* font-weight: bold; */
+      color: #3498db;
+      white-space: nowrap;
+  }
+    .entry-item-author-avatar {
+      grid-column: 2;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 2px solid #3498db;
+      }
+   .entry-item-author-avatar img {
+          /* width: 100%;
+          height: 100%; */
+
+      }
+   .entry-item-author-details {
+          /* margin-left: 10px; */
+          /* white-space: nowrap; */
+      }
+   /* .entry-item-author-role {
+      font-size: 18px;
+      color: #eee;
+      } */
+    .entry-item-footer-container{
+        grid-row:4;
+        display:grid;
+        grid-template-columns: 75% 35px 35px 35px;
+        column-gap: 10px;
+        align-items: center;
+        padding:0px 15px 0px 15px;
+        justify-content: right;
+    }
+    .entry-item-microsoft-logo{
+      grid-column: 4;
+      width: 35px;
+      height: 35px;
+      justify-content: right;
+  }
+    .entry-item-wiki-logo{
+        grid-column: 5;
+        width: 35px;
+        height: 35px;
+        justify-content: right;
+    }
+    .entry-item-link-content {
+        grid-column:2;
+        font-size: 18px;
+        /* margin-top: 5px; */
+    }
+    .entry-item-date-content {
+        grid-column: 3;
+        display: grid;
+        font-size: 18px;
+        white-space: nowrap;
+        color: #ccc;
+        display:none; 
+    }
+  .entry-item-content-container
+  {
+    grid-row:3;
+    display:grid;
+    /* grid-template-rows:  auto auto 20px ; */
+    grid-template-columns:65px auto auto 100px;
+  }
+  .entry-item-content{
+    grid-row:3;
+    grid-column:2/3;
+    display: grid;
+    /* padding: 10px; */
+  }
+  .entry-item-content  p {
+    display: inline;
+    line-height: 1.5;
+  }

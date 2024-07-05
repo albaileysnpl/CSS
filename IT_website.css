@@ -1,0 +1,23 @@
+devdiary.css
+ html{
+        margin:0;
+        padding: 0;
+        height:100%;
+    }
+    body {
+        font-family: Arial;
+        margin: 0;
+        padding: 0;
+        background-color: #2d2d30;
+        color: #fff;
+    }
+    .container {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        height: 100vh;                 /*  changed  */
+        margin: 0 auto;
+        padding-left:20px;
+        padding-right: 20px;
+ 
+    }
