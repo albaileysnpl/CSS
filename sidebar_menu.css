@@ -9,7 +9,7 @@
 
     flex: 0 0 250px;
     align-self: stretch;
-    background-color: #292b2f;
+    background-color: #202225;
     color: #ccc;
 
     padding-left:20px;
@@ -21,7 +21,7 @@
     border-radius: 0px;
     border-bottom-left-radius: 10px;
     border-right-width: 2px;
-    border-right-color:#292b2f;
+    border-right-color: #202225;
     border-right-style: solid;
     overflow: hidden;
     z-index: 998;
@@ -44,15 +44,15 @@
   }
   .sidebar li a {
     display: block;
-    background-color: #2f3136;
+    background-color: #282A2E;
     color: #999;
     text-decoration: none;
   }
   .sidebar li  a:hover {
     color:#fff;
     font-weight: bold;
-    background-color: 	#40444b;
-    border-inline-end: solid #006699 ; 
+    background-color: 	#2F3136;
+    border-inline-end: solid #3FA663 ; 
     writing-mode: horizontal-tb;
   }
   .sidebar-brand-logo-container{
