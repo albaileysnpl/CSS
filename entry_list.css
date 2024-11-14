@@ -7,6 +7,7 @@
         /* background-color:#2d2d30; */
         border-top-right-radius: 0px;
         border-bottom-right-radius: 10px;
+        overflow: hidden;
         /* box-sizing: border-box; */
         /* box-shadow: 0px 0 30px rgba(0, 0, 0, 0.5); */
         /* min-height:720px ; */
@@ -16,8 +17,8 @@
     }
     /* Entry Style Section */
     .entry-list {
-        width: 100%;
-        height: 100%;
+        /* width: 100%; */
+        /* height: 100%; */
         list-style: none;
         /* padding-left: 50px; */
         margin: 0;
@@ -49,7 +50,7 @@
         /* margin: 0px 0px; */
         padding-bottom: 0px;
         /* margin-right: 50px; */
-        background-color: #3e3e42;
+        background-color: #393C43;
         border-radius: 10px;
         opacity: 0.90;
     }
@@ -59,7 +60,7 @@
         grid-template-columns: auto auto;
         column-gap: 15px;
         align-items: center;
-        padding: 10px;
+        padding: 15px;
     }
     .entry-item-title-container{
         grid-row: 1;
@@ -86,7 +87,7 @@
     .entry-item-title-divider {
         grid-column: 4;
         font-size: 24px;
-        color: #7db700;
+        color: #3BA561;
         padding-right: 5px;
     }
     .entry-item-title-date {
@@ -111,7 +112,6 @@
         grid-column: 1;
         font-size: 12px;
         /* font-weight: bold; */
-        color: #3498db;
         white-space: nowrap;
     }
       .entry-item-author-avatar {
@@ -120,7 +120,7 @@
         height: 32px;
         border-radius: 50%;
         overflow: hidden;
-        border: 2px solid #3498db;
+        border: 2px solid #3FA663;
         }
      .entry-item-author-avatar img {
             /* width: 100%;
@@ -137,9 +137,8 @@
         } */
     .entry-item-release-info-container {
         grid-row:2;
-        grid-template-columns:35px 75% auto;
+        grid-template-columns:55px 75% auto;
         display: grid;
-        column-gap: 15px;
         align-items: bottom;
         padding-left: 10px;
         padding-top: 15px;
@@ -147,8 +146,27 @@
     .entry-item-release-info-content {
         grid-column: 2;
         font-size: 12px;
-        color: #7db700;
+        color: #3FA663;
         white-space: nowrap;
+    }
+    .entry-item-content-container
+    {
+      grid-row:3;
+      display:grid;
+      /* grid-template-rows:  auto auto 20px ; */
+      grid-template-columns:65px 100%;
+    }
+    .entry-item-content{
+      grid-row:3;
+      grid-column: 2;
+      display: grid;
+      /* padding: 10px; */
+    }
+    .entry-item-content  p {
+      display: inline;
+      line-height: 1.5;
+      /*top margin only*/
+      margin-bottom: 0px;
     }
     .entry-item-footer-container{
         grid-row:4;
@@ -156,8 +174,8 @@
         grid-template-columns: 75% 35px 35px 35px;
         column-gap: 10px;
         align-items: top;
-        padding-bottom: 10px;
-        padding-right: 10px;
+        padding-bottom: 15px;
+        padding-right: 15px;
         justify-content: right;
     }
     .entry-item-microsoft-logo{
@@ -190,7 +208,7 @@
     grid-row:3;
     display:grid;
     /* grid-template-rows:  auto auto 20px ; */
-    grid-template-columns:60px auto auto 60px;
+    grid-template-columns:65px auto auto 60px;
   }
   .entry-item-content{
     grid-row:3;
